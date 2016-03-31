@@ -1,3 +1,3 @@
 # CafeRecipe
 
-## 새로운 프로젝트
+## 박태현과 이대희의 iOS Project!
