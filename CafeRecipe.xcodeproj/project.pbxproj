@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E5365DE81CACFB4100FE97C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365DE71CACFB4100FE97C2 /* AppDelegate.swift */; };
-		E5365DEA1CACFB4100FE97C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365DE91CACFB4100FE97C2 /* ViewController.swift */; };
 		E5365DED1CACFB4100FE97C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5365DEB1CACFB4100FE97C2 /* Main.storyboard */; };
 		E5365DEF1CACFB4100FE97C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5365DEE1CACFB4100FE97C2 /* Assets.xcassets */; };
 		E5365DF21CACFB4100FE97C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5365DF01CACFB4100FE97C2 /* LaunchScreen.storyboard */; };
 		E5365DFD1CACFB4200FE97C2 /* CafeRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365DFC1CACFB4200FE97C2 /* CafeRecipeTests.swift */; };
 		E5365E081CACFB4200FE97C2 /* CafeRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */; };
+		E5B42A4F1CAD06DD00150320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B42A4E1CAD06DD00150320 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		E5365DE41CACFB4100FE97C2 /* CafeRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5365DE71CACFB4100FE97C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5365DE91CACFB4100FE97C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5365DEC1CACFB4100FE97C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5365DEE1CACFB4100FE97C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5365DF11CACFB4100FE97C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		E5365E031CACFB4200FE97C2 /* CafeRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRecipeUITests.swift; sourceTree = "<group>"; };
 		E5365E091CACFB4200FE97C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5B42A4E1CAD06DD00150320 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,10 @@
 		E5365DE61CACFB4100FE97C2 /* CafeRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				E5B42A521CAD070100150320 /* View */,
+				E5B42A511CAD06FB00150320 /* Model */,
+				E53F9F611CAD046400640600 /* Controller */,
 				E5365DE71CACFB4100FE97C2 /* AppDelegate.swift */,
-				E5365DE91CACFB4100FE97C2 /* ViewController.swift */,
 				E5365DEB1CACFB4100FE97C2 /* Main.storyboard */,
 				E5365DEE1CACFB4100FE97C2 /* Assets.xcassets */,
 				E5365DF01CACFB4100FE97C2 /* LaunchScreen.storyboard */,
@@ -123,6 +125,28 @@
 				E5365E091CACFB4200FE97C2 /* Info.plist */,
 			);
 			path = CafeRecipeUITests;
+			sourceTree = "<group>";
+		};
+		E53F9F611CAD046400640600 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5B42A4E1CAD06DD00150320 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E5B42A511CAD06FB00150320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E5B42A521CAD070100150320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5365DEA1CACFB4100FE97C2 /* ViewController.swift in Sources */,
+				E5B42A4F1CAD06DD00150320 /* ViewController.swift in Sources */,
 				E5365DE81CACFB4100FE97C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +506,7 @@
 				E5365E0E1CACFB4200FE97C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5365E0F1CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipeTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +515,7 @@
 				E5365E111CACFB4200FE97C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5365E121CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipeUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +524,7 @@
 				E5365E141CACFB4200FE97C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
