@@ -13,7 +13,9 @@
 		E5365DF21CACFB4100FE97C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5365DF01CACFB4100FE97C2 /* LaunchScreen.storyboard */; };
 		E5365DFD1CACFB4200FE97C2 /* CafeRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365DFC1CACFB4200FE97C2 /* CafeRecipeTests.swift */; };
 		E5365E081CACFB4200FE97C2 /* CafeRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */; };
-		E5B42A4F1CAD06DD00150320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B42A4E1CAD06DD00150320 /* ViewController.swift */; };
+		E561F22A1CAE8A6300EFDCAC /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561F2291CAE8A6300EFDCAC /* MainCollectionViewCell.swift */; };
+		E5B42A4F1CAD06DD00150320 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B42A4E1CAD06DD00150320 /* MainViewController.swift */; };
+		E5F8BA371CB27E9A00CF8DDF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8BA361CB27E9A00CF8DDF /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,9 @@
 		E5365E031CACFB4200FE97C2 /* CafeRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRecipeUITests.swift; sourceTree = "<group>"; };
 		E5365E091CACFB4200FE97C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5B42A4E1CAD06DD00150320 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E561F2291CAE8A6300EFDCAC /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5B42A4E1CAD06DD00150320 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E5F8BA361CB27E9A00CF8DDF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +134,19 @@
 		E53F9F611CAD046400640600 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5B42A4E1CAD06DD00150320 /* ViewController.swift */,
+				E561F2281CAE8A0D00EFDCAC /* Cell */,
+				E5B42A4E1CAD06DD00150320 /* MainViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		E561F2281CAE8A0D00EFDCAC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E561F2291CAE8A6300EFDCAC /* MainCollectionViewCell.swift */,
+				E5F8BA361CB27E9A00CF8DDF /* SearchTableViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		E5B42A511CAD06FB00150320 /* Model */ = {
@@ -217,6 +231,7 @@
 				TargetAttributes = {
 					E5365DE31CACFB4100FE97C2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = CM8334Y5VK;
 					};
 					E5365DF71CACFB4200FE97C2 = {
 						CreatedOnToolsVersion = 7.3;
@@ -280,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B42A4F1CAD06DD00150320 /* ViewController.swift in Sources */,
+				E5B42A4F1CAD06DD00150320 /* MainViewController.swift in Sources */,
+				E5F8BA371CB27E9A00CF8DDF /* SearchTableViewCell.swift in Sources */,
+				E561F22A1CAE8A6300EFDCAC /* MainCollectionViewCell.swift in Sources */,
 				E5365DE81CACFB4100FE97C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,10 +440,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CafeRecipe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -434,10 +455,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CafeRecipe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
