@@ -16,6 +16,15 @@
 		E561F22A1CAE8A6300EFDCAC /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561F2291CAE8A6300EFDCAC /* MainCollectionViewCell.swift */; };
 		E5B42A4F1CAD06DD00150320 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B42A4E1CAD06DD00150320 /* MainViewController.swift */; };
 		E5F8BA371CB27E9A00CF8DDF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8BA361CB27E9A00CF8DDF /* SearchTableViewCell.swift */; };
+		E8744B2D1CB2A8E200087811 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B241CB2A8E200087811 /* Coffee.swift */; };
+		E8744B2E1CB2A8E200087811 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B251CB2A8E200087811 /* Enum.swift */; };
+		E8744B2F1CB2A8E200087811 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B261CB2A8E200087811 /* Extension.swift */; };
+		E8744B301CB2A8E200087811 /* Ice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B271CB2A8E200087811 /* Ice.swift */; };
+		E8744B311CB2A8E200087811 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B281CB2A8E200087811 /* Juice.swift */; };
+		E8744B321CB2A8E200087811 /* Latte.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B291CB2A8E200087811 /* Latte.swift */; };
+		E8744B331CB2A8E200087811 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B2A1CB2A8E200087811 /* Protocol.swift */; };
+		E8744B341CB2A8E200087811 /* Smoothie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B2B1CB2A8E200087811 /* Smoothie.swift */; };
+		E8744B351CB2A8E200087811 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B2C1CB2A8E200087811 /* Tea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,15 @@
 		E561F2291CAE8A6300EFDCAC /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		E5B42A4E1CAD06DD00150320 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E5F8BA361CB27E9A00CF8DDF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		E8744B241CB2A8E200087811 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		E8744B251CB2A8E200087811 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		E8744B261CB2A8E200087811 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E8744B271CB2A8E200087811 /* Ice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ice.swift; sourceTree = "<group>"; };
+		E8744B281CB2A8E200087811 /* Juice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
+		E8744B291CB2A8E200087811 /* Latte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Latte.swift; sourceTree = "<group>"; };
+		E8744B2A1CB2A8E200087811 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		E8744B2B1CB2A8E200087811 /* Smoothie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Smoothie.swift; sourceTree = "<group>"; };
+		E8744B2C1CB2A8E200087811 /* Tea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +170,15 @@
 		E5B42A511CAD06FB00150320 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E8744B241CB2A8E200087811 /* Coffee.swift */,
+				E8744B251CB2A8E200087811 /* Enum.swift */,
+				E8744B261CB2A8E200087811 /* Extension.swift */,
+				E8744B271CB2A8E200087811 /* Ice.swift */,
+				E8744B281CB2A8E200087811 /* Juice.swift */,
+				E8744B291CB2A8E200087811 /* Latte.swift */,
+				E8744B2A1CB2A8E200087811 /* Protocol.swift */,
+				E8744B2B1CB2A8E200087811 /* Smoothie.swift */,
+				E8744B2C1CB2A8E200087811 /* Tea.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -296,9 +323,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5B42A4F1CAD06DD00150320 /* MainViewController.swift in Sources */,
+				E8744B341CB2A8E200087811 /* Smoothie.swift in Sources */,
 				E5F8BA371CB27E9A00CF8DDF /* SearchTableViewCell.swift in Sources */,
+				E8744B2F1CB2A8E200087811 /* Extension.swift in Sources */,
+				E8744B2E1CB2A8E200087811 /* Enum.swift in Sources */,
+				E8744B311CB2A8E200087811 /* Juice.swift in Sources */,
 				E561F22A1CAE8A6300EFDCAC /* MainCollectionViewCell.swift in Sources */,
+				E8744B351CB2A8E200087811 /* Tea.swift in Sources */,
+				E8744B331CB2A8E200087811 /* Protocol.swift in Sources */,
+				E8744B321CB2A8E200087811 /* Latte.swift in Sources */,
+				E8744B301CB2A8E200087811 /* Ice.swift in Sources */,
 				E5365DE81CACFB4100FE97C2 /* AppDelegate.swift in Sources */,
+				E8744B2D1CB2A8E200087811 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
