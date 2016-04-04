@@ -1,1162 +1,653 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1A7D355BF78DD0DAC765C35E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2E0F2C3F4390499774D73E47</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>431F130E5B903886B0BBF0F3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>991FF727FB306AC22CBE10FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5211BCBF12B8C40BC143F56C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>626BB65D6FA79E79B6EC5E2A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2E0F2C3F4390499774D73E47</string>
-				<string>E209447D848634879531F9F8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>991FF727FB306AC22CBE10FF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C19EE2BBCF6704CED9432974</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>E209447D848634879531F9F8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DDB1CACFB4100FE97C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5365DE61CACFB4100FE97C2</string>
-				<string>E5365DFB1CACFB4200FE97C2</string>
-				<string>E5365E061CACFB4200FE97C2</string>
-				<string>E5365DE51CACFB4100FE97C2</string>
-				<string>626BB65D6FA79E79B6EC5E2A</string>
-				<string>431F130E5B903886B0BBF0F3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DDC1CACFB4100FE97C2</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>DaveLee</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E5365DE31CACFB4100FE97C2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-					<key>E5365DF71CACFB4200FE97C2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>E5365DE31CACFB4100FE97C2</string>
-					</dict>
-					<key>E5365E021CACFB4200FE97C2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>E5365DE31CACFB4100FE97C2</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E5365DDF1CACFB4100FE97C2</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E5365DDB1CACFB4100FE97C2</string>
-			<key>productRefGroup</key>
-			<string>E5365DE51CACFB4100FE97C2</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E5365DE31CACFB4100FE97C2</string>
-				<string>E5365DF71CACFB4200FE97C2</string>
-				<string>E5365E021CACFB4200FE97C2</string>
-			</array>
-		</dict>
-		<key>E5365DDF1CACFB4100FE97C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E5365E0A1CACFB4200FE97C2</string>
-				<string>E5365E0B1CACFB4200FE97C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E5365DE01CACFB4100FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E5B42A4F1CAD06DD00150320</string>
-				<string>E5365DE81CACFB4100FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365DE11CACFB4100FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F0EE639395DA0CAC6FE7FFEE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365DE21CACFB4100FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E5365DF21CACFB4100FE97C2</string>
-				<string>E5365DEF1CACFB4100FE97C2</string>
-				<string>E5365DED1CACFB4100FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365DE31CACFB4100FE97C2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E5365E0C1CACFB4200FE97C2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1A7D355BF78DD0DAC765C35E</string>
-				<string>E5365DE01CACFB4100FE97C2</string>
-				<string>E5365DE11CACFB4100FE97C2</string>
-				<string>E5365DE21CACFB4100FE97C2</string>
-				<string>5211BCBF12B8C40BC143F56C</string>
-				<string>C19EE2BBCF6704CED9432974</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CafeRecipe</string>
-			<key>productName</key>
-			<string>CafeRecipe</string>
-			<key>productReference</key>
-			<string>E5365DE41CACFB4100FE97C2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E5365DE41CACFB4100FE97C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CafeRecipe.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E5365DE51CACFB4100FE97C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5365DE41CACFB4100FE97C2</string>
-				<string>E5365DF81CACFB4200FE97C2</string>
-				<string>E5365E031CACFB4200FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DE61CACFB4100FE97C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5B42A521CAD070100150320</string>
-				<string>E5B42A511CAD06FB00150320</string>
-				<string>E53F9F611CAD046400640600</string>
-				<string>E5365DE71CACFB4100FE97C2</string>
-				<string>E5365DEB1CACFB4100FE97C2</string>
-				<string>E5365DEE1CACFB4100FE97C2</string>
-				<string>E5365DF01CACFB4100FE97C2</string>
-				<string>E5365DF31CACFB4100FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CafeRecipe</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DE71CACFB4100FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DE81CACFB4100FE97C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5365DE71CACFB4100FE97C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E5365DEB1CACFB4100FE97C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5365DEC1CACFB4100FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DEC1CACFB4100FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DED1CACFB4100FE97C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5365DEB1CACFB4100FE97C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E5365DEE1CACFB4100FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DEF1CACFB4100FE97C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5365DEE1CACFB4100FE97C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E5365DF01CACFB4100FE97C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5365DF11CACFB4100FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DF11CACFB4100FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DF21CACFB4100FE97C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5365DF01CACFB4100FE97C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E5365DF31CACFB4100FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DF41CACFB4200FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E5365DFD1CACFB4200FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365DF51CACFB4200FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365DF61CACFB4200FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365DF71CACFB4200FE97C2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E5365E0F1CACFB4200FE97C2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E5365DF41CACFB4200FE97C2</string>
-				<string>E5365DF51CACFB4200FE97C2</string>
-				<string>E5365DF61CACFB4200FE97C2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E5365DFA1CACFB4200FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CafeRecipeTests</string>
-			<key>productName</key>
-			<string>CafeRecipeTests</string>
-			<key>productReference</key>
-			<string>E5365DF81CACFB4200FE97C2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>E5365DF81CACFB4200FE97C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CafeRecipeTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E5365DF91CACFB4200FE97C2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E5365DDC1CACFB4100FE97C2</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E5365DE31CACFB4100FE97C2</string>
-			<key>remoteInfo</key>
-			<string>CafeRecipe</string>
-		</dict>
-		<key>E5365DFA1CACFB4200FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E5365DE31CACFB4100FE97C2</string>
-			<key>targetProxy</key>
-			<string>E5365DF91CACFB4200FE97C2</string>
-		</dict>
-		<key>E5365DFB1CACFB4200FE97C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5365DFC1CACFB4200FE97C2</string>
-				<string>E5365DFE1CACFB4200FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CafeRecipeTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DFC1CACFB4200FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CafeRecipeTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DFD1CACFB4200FE97C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5365DFC1CACFB4200FE97C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E5365DFE1CACFB4200FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365DFF1CACFB4200FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E5365E081CACFB4200FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365E001CACFB4200FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365E011CACFB4200FE97C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E5365E021CACFB4200FE97C2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E5365E121CACFB4200FE97C2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E5365DFF1CACFB4200FE97C2</string>
-				<string>E5365E001CACFB4200FE97C2</string>
-				<string>E5365E011CACFB4200FE97C2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E5365E051CACFB4200FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CafeRecipeUITests</string>
-			<key>productName</key>
-			<string>CafeRecipeUITests</string>
-			<key>productReference</key>
-			<string>E5365E031CACFB4200FE97C2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>E5365E031CACFB4200FE97C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CafeRecipeUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E5365E041CACFB4200FE97C2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E5365DDC1CACFB4100FE97C2</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E5365DE31CACFB4100FE97C2</string>
-			<key>remoteInfo</key>
-			<string>CafeRecipe</string>
-		</dict>
-		<key>E5365E051CACFB4200FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E5365DE31CACFB4100FE97C2</string>
-			<key>targetProxy</key>
-			<string>E5365E041CACFB4200FE97C2</string>
-		</dict>
-		<key>E5365E061CACFB4200FE97C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5365E071CACFB4200FE97C2</string>
-				<string>E5365E091CACFB4200FE97C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CafeRecipeUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365E071CACFB4200FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CafeRecipeUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365E081CACFB4200FE97C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5365E071CACFB4200FE97C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E5365E091CACFB4200FE97C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5365E0A1CACFB4200FE97C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E5365E0B1CACFB4200FE97C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E5365E0C1CACFB4200FE97C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E5365E0D1CACFB4200FE97C2</string>
-				<string>E5365E0E1CACFB4200FE97C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E5365E0D1CACFB4200FE97C2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>2E0F2C3F4390499774D73E47</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CafeRecipe/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.DaveBen.CafeRecipe</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E5365E0E1CACFB4200FE97C2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E209447D848634879531F9F8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CafeRecipe/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.DaveBen.CafeRecipe</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E5365E0F1CACFB4200FE97C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E5365E101CACFB4200FE97C2</string>
-				<string>E5365E111CACFB4200FE97C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E5365E101CACFB4200FE97C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CafeRecipeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.DaveBen.CafeRecipeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/CafeRecipe.app/CafeRecipe</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E5365E111CACFB4200FE97C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>CafeRecipeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.DaveBen.CafeRecipeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/CafeRecipe.app/CafeRecipe</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E5365E121CACFB4200FE97C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E5365E131CACFB4200FE97C2</string>
-				<string>E5365E141CACFB4200FE97C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E5365E131CACFB4200FE97C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>CafeRecipeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.DaveBen.CafeRecipeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>CafeRecipe</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E5365E141CACFB4200FE97C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>CafeRecipeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.DaveBen.CafeRecipeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>CafeRecipe</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E53F9F611CAD046400640600</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E5B42A4E1CAD06DD00150320</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5B42A4E1CAD06DD00150320</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5B42A4F1CAD06DD00150320</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5B42A4E1CAD06DD00150320</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E5B42A511CAD06FB00150320</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5B42A521CAD070100150320</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F0EE639395DA0CAC6FE7FFEE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>991FF727FB306AC22CBE10FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E5365DDC1CACFB4100FE97C2</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5365DE81CACFB4100FE97C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365DE71CACFB4100FE97C2 /* AppDelegate.swift */; };
+		E5365DED1CACFB4100FE97C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5365DEB1CACFB4100FE97C2 /* Main.storyboard */; };
+		E5365DEF1CACFB4100FE97C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5365DEE1CACFB4100FE97C2 /* Assets.xcassets */; };
+		E5365DF21CACFB4100FE97C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5365DF01CACFB4100FE97C2 /* LaunchScreen.storyboard */; };
+		E5365DFD1CACFB4200FE97C2 /* CafeRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365DFC1CACFB4200FE97C2 /* CafeRecipeTests.swift */; };
+		E5365E081CACFB4200FE97C2 /* CafeRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */; };
+		E5B42A4F1CAD06DD00150320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B42A4E1CAD06DD00150320 /* ViewController.swift */; };
+		E8744B101CB24B9B00087811 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B0F1CB24B9B00087811 /* Protocol.swift */; };
+		E8744B121CB24BCE00087811 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B111CB24BCE00087811 /* Enum.swift */; };
+		E8744B171CB24C1D00087811 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B161CB24C1D00087811 /* Coffee.swift */; };
+		E8744B191CB24CCA00087811 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B181CB24CCA00087811 /* Extension.swift */; };
+		E8744B1B1CB27C0A00087811 /* Latte.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B1A1CB27C0A00087811 /* Latte.swift */; };
+		E8744B1D1CB2812E00087811 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B1C1CB2812E00087811 /* Juice.swift */; };
+		E8744B1F1CB2823A00087811 /* Smoothie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B1E1CB2823A00087811 /* Smoothie.swift */; };
+		E8744B211CB28C8E00087811 /* Ice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B201CB28C8E00087811 /* Ice.swift */; };
+		E8744B231CB2979900087811 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B221CB2979900087811 /* Tea.swift */; };
+		F0EE639395DA0CAC6FE7FFEE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991FF727FB306AC22CBE10FF /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5365DF91CACFB4200FE97C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5365DDC1CACFB4100FE97C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5365DE31CACFB4100FE97C2;
+			remoteInfo = CafeRecipe;
+		};
+		E5365E041CACFB4200FE97C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5365DDC1CACFB4100FE97C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5365DE31CACFB4100FE97C2;
+			remoteInfo = CafeRecipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E0F2C3F4390499774D73E47 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		991FF727FB306AC22CBE10FF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E209447D848634879531F9F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E5365DE41CACFB4100FE97C2 /* CafeRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5365DE71CACFB4100FE97C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5365DEC1CACFB4100FE97C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5365DEE1CACFB4100FE97C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5365DF11CACFB4100FE97C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5365DF31CACFB4100FE97C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5365DF81CACFB4200FE97C2 /* CafeRecipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeRecipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5365DFC1CACFB4200FE97C2 /* CafeRecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRecipeTests.swift; sourceTree = "<group>"; };
+		E5365DFE1CACFB4200FE97C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5365E031CACFB4200FE97C2 /* CafeRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRecipeUITests.swift; sourceTree = "<group>"; };
+		E5365E091CACFB4200FE97C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5B42A4E1CAD06DD00150320 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8744B0F1CB24B9B00087811 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		E8744B111CB24BCE00087811 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		E8744B161CB24C1D00087811 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		E8744B181CB24CCA00087811 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E8744B1A1CB27C0A00087811 /* Latte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Latte.swift; sourceTree = "<group>"; };
+		E8744B1C1CB2812E00087811 /* Juice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
+		E8744B1E1CB2823A00087811 /* Smoothie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Smoothie.swift; sourceTree = "<group>"; };
+		E8744B201CB28C8E00087811 /* Ice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ice.swift; sourceTree = "<group>"; };
+		E8744B221CB2979900087811 /* Tea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5365DE11CACFB4100FE97C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0EE639395DA0CAC6FE7FFEE /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5365DF51CACFB4200FE97C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5365E001CACFB4200FE97C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		431F130E5B903886B0BBF0F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991FF727FB306AC22CBE10FF /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		626BB65D6FA79E79B6EC5E2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E0F2C3F4390499774D73E47 /* Pods.debug.xcconfig */,
+				E209447D848634879531F9F8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5365DDB1CACFB4100FE97C2 = {
+			isa = PBXGroup;
+			children = (
+				E5365DE61CACFB4100FE97C2 /* CafeRecipe */,
+				E5365DFB1CACFB4200FE97C2 /* CafeRecipeTests */,
+				E5365E061CACFB4200FE97C2 /* CafeRecipeUITests */,
+				E5365DE51CACFB4100FE97C2 /* Products */,
+				626BB65D6FA79E79B6EC5E2A /* Pods */,
+				431F130E5B903886B0BBF0F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E5365DE51CACFB4100FE97C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5365DE41CACFB4100FE97C2 /* CafeRecipe.app */,
+				E5365DF81CACFB4200FE97C2 /* CafeRecipeTests.xctest */,
+				E5365E031CACFB4200FE97C2 /* CafeRecipeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5365DE61CACFB4100FE97C2 /* CafeRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				E5B42A521CAD070100150320 /* View */,
+				E5B42A511CAD06FB00150320 /* Model */,
+				E53F9F611CAD046400640600 /* Controller */,
+				E5365DE71CACFB4100FE97C2 /* AppDelegate.swift */,
+				E5365DEB1CACFB4100FE97C2 /* Main.storyboard */,
+				E5365DEE1CACFB4100FE97C2 /* Assets.xcassets */,
+				E5365DF01CACFB4100FE97C2 /* LaunchScreen.storyboard */,
+				E5365DF31CACFB4100FE97C2 /* Info.plist */,
+			);
+			path = CafeRecipe;
+			sourceTree = "<group>";
+		};
+		E5365DFB1CACFB4200FE97C2 /* CafeRecipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5365DFC1CACFB4200FE97C2 /* CafeRecipeTests.swift */,
+				E5365DFE1CACFB4200FE97C2 /* Info.plist */,
+			);
+			path = CafeRecipeTests;
+			sourceTree = "<group>";
+		};
+		E5365E061CACFB4200FE97C2 /* CafeRecipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */,
+				E5365E091CACFB4200FE97C2 /* Info.plist */,
+			);
+			path = CafeRecipeUITests;
+			sourceTree = "<group>";
+		};
+		E53F9F611CAD046400640600 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E5B42A4E1CAD06DD00150320 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E5B42A511CAD06FB00150320 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8744B111CB24BCE00087811 /* Enum.swift */,
+				E8744B0F1CB24B9B00087811 /* Protocol.swift */,
+				E8744B181CB24CCA00087811 /* Extension.swift */,
+				E8744B131CB24BF000087811 /* Class */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E5B42A521CAD070100150320 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E8744B131CB24BF000087811 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E8744B161CB24C1D00087811 /* Coffee.swift */,
+				E8744B1A1CB27C0A00087811 /* Latte.swift */,
+				E8744B1C1CB2812E00087811 /* Juice.swift */,
+				E8744B1E1CB2823A00087811 /* Smoothie.swift */,
+				E8744B201CB28C8E00087811 /* Ice.swift */,
+				E8744B221CB2979900087811 /* Tea.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5365DE31CACFB4100FE97C2 /* CafeRecipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5365E0C1CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipe" */;
+			buildPhases = (
+				1A7D355BF78DD0DAC765C35E /* Check Pods Manifest.lock */,
+				E5365DE01CACFB4100FE97C2 /* Sources */,
+				E5365DE11CACFB4100FE97C2 /* Frameworks */,
+				E5365DE21CACFB4100FE97C2 /* Resources */,
+				5211BCBF12B8C40BC143F56C /* Embed Pods Frameworks */,
+				C19EE2BBCF6704CED9432974 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CafeRecipe;
+			productName = CafeRecipe;
+			productReference = E5365DE41CACFB4100FE97C2 /* CafeRecipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5365DF71CACFB4200FE97C2 /* CafeRecipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5365E0F1CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipeTests" */;
+			buildPhases = (
+				E5365DF41CACFB4200FE97C2 /* Sources */,
+				E5365DF51CACFB4200FE97C2 /* Frameworks */,
+				E5365DF61CACFB4200FE97C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5365DFA1CACFB4200FE97C2 /* PBXTargetDependency */,
+			);
+			name = CafeRecipeTests;
+			productName = CafeRecipeTests;
+			productReference = E5365DF81CACFB4200FE97C2 /* CafeRecipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5365E021CACFB4200FE97C2 /* CafeRecipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5365E121CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipeUITests" */;
+			buildPhases = (
+				E5365DFF1CACFB4200FE97C2 /* Sources */,
+				E5365E001CACFB4200FE97C2 /* Frameworks */,
+				E5365E011CACFB4200FE97C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5365E051CACFB4200FE97C2 /* PBXTargetDependency */,
+			);
+			name = CafeRecipeUITests;
+			productName = CafeRecipeUITests;
+			productReference = E5365E031CACFB4200FE97C2 /* CafeRecipeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5365DDC1CACFB4100FE97C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = DaveLee;
+				TargetAttributes = {
+					E5365DE31CACFB4100FE97C2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E5365DF71CACFB4200FE97C2 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E5365DE31CACFB4100FE97C2;
+					};
+					E5365E021CACFB4200FE97C2 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E5365DE31CACFB4100FE97C2;
+					};
+				};
+			};
+			buildConfigurationList = E5365DDF1CACFB4100FE97C2 /* Build configuration list for PBXProject "CafeRecipe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5365DDB1CACFB4100FE97C2;
+			productRefGroup = E5365DE51CACFB4100FE97C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5365DE31CACFB4100FE97C2 /* CafeRecipe */,
+				E5365DF71CACFB4200FE97C2 /* CafeRecipeTests */,
+				E5365E021CACFB4200FE97C2 /* CafeRecipeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5365DE21CACFB4100FE97C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5365DF21CACFB4100FE97C2 /* LaunchScreen.storyboard in Resources */,
+				E5365DEF1CACFB4100FE97C2 /* Assets.xcassets in Resources */,
+				E5365DED1CACFB4100FE97C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5365DF61CACFB4200FE97C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5365E011CACFB4200FE97C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A7D355BF78DD0DAC765C35E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5211BCBF12B8C40BC143F56C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C19EE2BBCF6704CED9432974 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5365DE01CACFB4100FE97C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8744B101CB24B9B00087811 /* Protocol.swift in Sources */,
+				E8744B1F1CB2823A00087811 /* Smoothie.swift in Sources */,
+				E8744B1B1CB27C0A00087811 /* Latte.swift in Sources */,
+				E5B42A4F1CAD06DD00150320 /* ViewController.swift in Sources */,
+				E8744B121CB24BCE00087811 /* Enum.swift in Sources */,
+				E8744B191CB24CCA00087811 /* Extension.swift in Sources */,
+				E5365DE81CACFB4100FE97C2 /* AppDelegate.swift in Sources */,
+				E8744B211CB28C8E00087811 /* Ice.swift in Sources */,
+				E8744B231CB2979900087811 /* Tea.swift in Sources */,
+				E8744B1D1CB2812E00087811 /* Juice.swift in Sources */,
+				E8744B171CB24C1D00087811 /* Coffee.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5365DF41CACFB4200FE97C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5365DFD1CACFB4200FE97C2 /* CafeRecipeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5365DFF1CACFB4200FE97C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5365E081CACFB4200FE97C2 /* CafeRecipeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5365DFA1CACFB4200FE97C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5365DE31CACFB4100FE97C2 /* CafeRecipe */;
+			targetProxy = E5365DF91CACFB4200FE97C2 /* PBXContainerItemProxy */;
+		};
+		E5365E051CACFB4200FE97C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5365DE31CACFB4100FE97C2 /* CafeRecipe */;
+			targetProxy = E5365E041CACFB4200FE97C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5365DEB1CACFB4100FE97C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5365DEC1CACFB4100FE97C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5365DF01CACFB4100FE97C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5365DF11CACFB4100FE97C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5365E0A1CACFB4200FE97C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5365E0B1CACFB4200FE97C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5365E0D1CACFB4200FE97C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0F2C3F4390499774D73E47 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CafeRecipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5365E0E1CACFB4200FE97C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E209447D848634879531F9F8 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CafeRecipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E5365E101CACFB4200FE97C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CafeRecipeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafeRecipe.app/CafeRecipe";
+			};
+			name = Debug;
+		};
+		E5365E111CACFB4200FE97C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CafeRecipeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafeRecipe.app/CafeRecipe";
+			};
+			name = Release;
+		};
+		E5365E131CACFB4200FE97C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CafeRecipeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CafeRecipe;
+			};
+			name = Debug;
+		};
+		E5365E141CACFB4200FE97C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CafeRecipeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CafeRecipe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5365DDF1CACFB4100FE97C2 /* Build configuration list for PBXProject "CafeRecipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5365E0A1CACFB4200FE97C2 /* Debug */,
+				E5365E0B1CACFB4200FE97C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5365E0C1CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5365E0D1CACFB4200FE97C2 /* Debug */,
+				E5365E0E1CACFB4200FE97C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5365E0F1CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5365E101CACFB4200FE97C2 /* Debug */,
+				E5365E111CACFB4200FE97C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5365E121CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5365E131CACFB4200FE97C2 /* Debug */,
+				E5365E141CACFB4200FE97C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5365DDC1CACFB4100FE97C2 /* Project object */;
+}
