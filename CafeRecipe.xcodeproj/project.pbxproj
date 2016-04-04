@@ -13,17 +13,9 @@
 		E5365DF21CACFB4100FE97C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5365DF01CACFB4100FE97C2 /* LaunchScreen.storyboard */; };
 		E5365DFD1CACFB4200FE97C2 /* CafeRecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365DFC1CACFB4200FE97C2 /* CafeRecipeTests.swift */; };
 		E5365E081CACFB4200FE97C2 /* CafeRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */; };
-		E5B42A4F1CAD06DD00150320 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B42A4E1CAD06DD00150320 /* ViewController.swift */; };
-		E8744B101CB24B9B00087811 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B0F1CB24B9B00087811 /* Protocol.swift */; };
-		E8744B121CB24BCE00087811 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B111CB24BCE00087811 /* Enum.swift */; };
-		E8744B171CB24C1D00087811 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B161CB24C1D00087811 /* Coffee.swift */; };
-		E8744B191CB24CCA00087811 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B181CB24CCA00087811 /* Extension.swift */; };
-		E8744B1B1CB27C0A00087811 /* Latte.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B1A1CB27C0A00087811 /* Latte.swift */; };
-		E8744B1D1CB2812E00087811 /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B1C1CB2812E00087811 /* Juice.swift */; };
-		E8744B1F1CB2823A00087811 /* Smoothie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B1E1CB2823A00087811 /* Smoothie.swift */; };
-		E8744B211CB28C8E00087811 /* Ice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B201CB28C8E00087811 /* Ice.swift */; };
-		E8744B231CB2979900087811 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8744B221CB2979900087811 /* Tea.swift */; };
-		F0EE639395DA0CAC6FE7FFEE /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991FF727FB306AC22CBE10FF /* Pods.framework */; };
+		E561F22A1CAE8A6300EFDCAC /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E561F2291CAE8A6300EFDCAC /* MainCollectionViewCell.swift */; };
+		E5B42A4F1CAD06DD00150320 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B42A4E1CAD06DD00150320 /* MainViewController.swift */; };
+		E5F8BA371CB27E9A00CF8DDF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F8BA361CB27E9A00CF8DDF /* SearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E0F2C3F4390499774D73E47 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		991FF727FB306AC22CBE10FF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E209447D848634879531F9F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E5365DE41CACFB4100FE97C2 /* CafeRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5365DE71CACFB4100FE97C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5365DEC1CACFB4100FE97C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,16 +48,9 @@
 		E5365E031CACFB4200FE97C2 /* CafeRecipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeRecipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5365E071CACFB4200FE97C2 /* CafeRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRecipeUITests.swift; sourceTree = "<group>"; };
 		E5365E091CACFB4200FE97C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5B42A4E1CAD06DD00150320 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E8744B0F1CB24B9B00087811 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
-		E8744B111CB24BCE00087811 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
-		E8744B161CB24C1D00087811 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
-		E8744B181CB24CCA00087811 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		E8744B1A1CB27C0A00087811 /* Latte.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Latte.swift; sourceTree = "<group>"; };
-		E8744B1C1CB2812E00087811 /* Juice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
-		E8744B1E1CB2823A00087811 /* Smoothie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Smoothie.swift; sourceTree = "<group>"; };
-		E8744B201CB28C8E00087811 /* Ice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ice.swift; sourceTree = "<group>"; };
-		E8744B221CB2979900087811 /* Tea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
+		E561F2291CAE8A6300EFDCAC /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5B42A4E1CAD06DD00150320 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E5F8BA361CB27E9A00CF8DDF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0EE639395DA0CAC6FE7FFEE /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,23 +78,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		431F130E5B903886B0BBF0F3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				991FF727FB306AC22CBE10FF /* Pods.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		626BB65D6FA79E79B6EC5E2A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2E0F2C3F4390499774D73E47 /* Pods.debug.xcconfig */,
-				E209447D848634879531F9F8 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		E5365DDB1CACFB4100FE97C2 = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +85,6 @@
 				E5365DFB1CACFB4200FE97C2 /* CafeRecipeTests */,
 				E5365E061CACFB4200FE97C2 /* CafeRecipeUITests */,
 				E5365DE51CACFB4100FE97C2 /* Products */,
-				626BB65D6FA79E79B6EC5E2A /* Pods */,
-				431F130E5B903886B0BBF0F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,18 +134,24 @@
 		E53F9F611CAD046400640600 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E5B42A4E1CAD06DD00150320 /* ViewController.swift */,
+				E561F2281CAE8A0D00EFDCAC /* Cell */,
+				E5B42A4E1CAD06DD00150320 /* MainViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		E561F2281CAE8A0D00EFDCAC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E561F2291CAE8A6300EFDCAC /* MainCollectionViewCell.swift */,
+				E5F8BA361CB27E9A00CF8DDF /* SearchTableViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		E5B42A511CAD06FB00150320 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E8744B111CB24BCE00087811 /* Enum.swift */,
-				E8744B0F1CB24B9B00087811 /* Protocol.swift */,
-				E8744B181CB24CCA00087811 /* Extension.swift */,
-				E8744B131CB24BF000087811 /* Class */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -195,19 +163,6 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		E8744B131CB24BF000087811 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				E8744B161CB24C1D00087811 /* Coffee.swift */,
-				E8744B1A1CB27C0A00087811 /* Latte.swift */,
-				E8744B1C1CB2812E00087811 /* Juice.swift */,
-				E8744B1E1CB2823A00087811 /* Smoothie.swift */,
-				E8744B201CB28C8E00087811 /* Ice.swift */,
-				E8744B221CB2979900087811 /* Tea.swift */,
-			);
-			name = Class;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,12 +170,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5365E0C1CACFB4200FE97C2 /* Build configuration list for PBXNativeTarget "CafeRecipe" */;
 			buildPhases = (
-				1A7D355BF78DD0DAC765C35E /* Check Pods Manifest.lock */,
 				E5365DE01CACFB4100FE97C2 /* Sources */,
 				E5365DE11CACFB4100FE97C2 /* Frameworks */,
 				E5365DE21CACFB4100FE97C2 /* Resources */,
-				5211BCBF12B8C40BC143F56C /* Embed Pods Frameworks */,
-				C19EE2BBCF6704CED9432974 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +231,7 @@
 				TargetAttributes = {
 					E5365DE31CACFB4100FE97C2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = CM8334Y5VK;
 					};
 					E5365DF71CACFB4200FE97C2 = {
 						CreatedOnToolsVersion = 7.3;
@@ -337,70 +290,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1A7D355BF78DD0DAC765C35E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5211BCBF12B8C40BC143F56C /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C19EE2BBCF6704CED9432974 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		E5365DE01CACFB4100FE97C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8744B101CB24B9B00087811 /* Protocol.swift in Sources */,
-				E8744B1F1CB2823A00087811 /* Smoothie.swift in Sources */,
-				E8744B1B1CB27C0A00087811 /* Latte.swift in Sources */,
-				E5B42A4F1CAD06DD00150320 /* ViewController.swift in Sources */,
-				E8744B121CB24BCE00087811 /* Enum.swift in Sources */,
-				E8744B191CB24CCA00087811 /* Extension.swift in Sources */,
+				E5B42A4F1CAD06DD00150320 /* MainViewController.swift in Sources */,
+				E5F8BA371CB27E9A00CF8DDF /* SearchTableViewCell.swift in Sources */,
+				E561F22A1CAE8A6300EFDCAC /* MainCollectionViewCell.swift in Sources */,
 				E5365DE81CACFB4100FE97C2 /* AppDelegate.swift in Sources */,
-				E8744B211CB28C8E00087811 /* Ice.swift in Sources */,
-				E8744B231CB2979900087811 /* Tea.swift in Sources */,
-				E8744B1D1CB2812E00087811 /* Juice.swift in Sources */,
-				E8744B171CB24C1D00087811 /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,25 +438,31 @@
 		};
 		E5365E0D1CACFB4200FE97C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E0F2C3F4390499774D73E47 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CafeRecipe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		E5365E0E1CACFB4200FE97C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E209447D848634879531F9F8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CafeRecipe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DaveBen.CafeRecipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
